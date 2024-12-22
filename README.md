@@ -36,11 +36,11 @@ designated folder.
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/pranjalco/mail-merger.git
+   git clone https://github.com/pranjalco/mail-merger-simple.git
 
 2. Navigate to the project directory:
    ```bash
-   cd mail-merger
+   cd mail-merger-simple
 
 ## Running the Program
 1. Ensure Python 3.9 or later is installed on your system.
