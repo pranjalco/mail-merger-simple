@@ -1,7 +1,7 @@
 from functions import *
 
 """
-# Project 24: Mail Merger
+# Project 18: Mail Merger
 
 ## Description:
 This program automates the creation of personalized invitation letters. It reads a template letter from a text file,
@@ -22,7 +22,7 @@ designated folder.
 
 ## Author
 - **Name**: Pranjal Sarnaik
-- **Date**: 2024-12-22
+- **Date**: 22 Dec 2024
 
 ## Features
 - Automates personalized letter creation.
@@ -40,6 +40,7 @@ designated folder.
 with open("./Input/Names/invited_names_pr.txt", "r") as name_info:
     names = name_info.readlines()
 
+# Here we are having new line at the end of each element in the names list so we are removing it.
 clean_names = []
 for _ in names:
     clean_names.append(_.strip())
@@ -50,6 +51,7 @@ with open("./Input/Letters/starting_letter.txt", "r") as letter:
 for name in clean_names:
 
     data = letter_content.replace("[name]", name)
+    # Saving the letters
     with open(f"./Output/ReadyToSend/letter_for_{name}.txt", "w") as file:
         file.write(data)
 
