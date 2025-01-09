@@ -1,4 +1,4 @@
-# Project 24: Mail Merger
+# Project 18: Mail Merger
 
 ## Description:
 This program automates the creation of personalized invitation letters. It reads a template letter from a text file,
@@ -19,7 +19,7 @@ designated folder.
 
 ## Author
 - **Name**: Pranjal Sarnaik
-- **Date**: 2024-12-22
+- **Date**: 22 Dec 2024
 
 ## Features
 - Automates personalized letter creation.
