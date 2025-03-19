@@ -1,40 +1,33 @@
 from functions import *
 
 """
-# Project 18: Mail Merger
-
-## Description:
-This program automates the creation of personalized invitation letters. It reads a template letter from a text file,
-replaces the [name] placeholder with actual names from another text file, and saves each personalized letter in a
-designated folder.
-
-## How to Use:
-1. `invited_names_pr.txt` contains the list of names to be used for personalizing the letters.  
-2. `starting_letter.txt` contains the message template with a placeholder (e.g., `[name]`) for replacing names.  
-3. You can modify the contents of both files (`invited_names_pr.txt` and `starting_letter.txt`) as needed.  
-4. Run the program by executing `app.py`.  
-5. After running the program, the output text files will be saved in the `Output/ReadyToSend` folder.   
-
-## Level
-- **Level**: Simple, Simple-level automation project, beginner-friendly, task automation.
-- **Skills:** Python programming, file handling, string manipulation, automation.
-- **Domain:** Automation and Simulation, Text processing, file management, basic automation
+# Mail Merger
+This program automates personalized letter creation by reading a template, replacing `[name]` placeholders with actual names from a text file, and saving the final letters in a designated folder. 
 
 ## Author
-- **Name**: Pranjal Sarnaik
-- **Date**: 22 Dec 2024
+Pranjal Sarnaik
 
 ## Features
-- Automates personalized letter creation.
-- Reads a template letter and list of names from text files.
-- Replaces placeholders like `[name]` with actual names.
-- Saves all generated letters in a designated folder (`ReadyToSend`).
-- Efficiently handles bulk letter generation.
-- Easily reusable for different templates and events.
-- Simplifies repetitive tasks with minimal effort.
-- Supports custom formatting within the template.
-- Lightweight and uses Python’s standard library.
-- Ensures organized output for easy access.
+- Reads names from `invited_names_pr.txt`.  
+- Uses `starting_letter.txt` as the template.  
+- Replaces `[name]` with actual names.  
+- Saves personalized letters in `Output/ReadyToSend`.  
+- Automates bulk letter generation efficiently.
+
+## Level
+Simple
+
+## Tech Stack
+Python | File Handling | Automation  
+
+## How to Run
+1. Clone the repo:  
+   ```bash  
+   git clone https://github.com/pranjalco/mail-merger-simple.git
+
+3. Run:
+    ```bash  
+   python app.py
 """
 
 with open("./Input/Names/invited_names_pr.txt", "r") as name_info:
